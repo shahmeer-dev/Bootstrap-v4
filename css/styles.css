@@ -1,3 +1,8 @@
+body{
+    padding-top: 50px;
+    z-index: 0;
+}
+
 .row-header {
     margin: 0px auto;
     padding: 0px;
@@ -26,6 +31,12 @@
     margin: 0px;
     font-size: 80%;
     color: #0f0f0f;
+}
+
+/* Navigation Background */
+
+.navbar-dark {
+    background-color: #512DA8;
 }
 
 /* About Us */
