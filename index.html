@@ -230,7 +230,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 order-first order-md-last">
+            <div class="col-md-2 order-first order-md-last align-self-center">
                 <h4 class="mb-4">Meet our Culinary <br> specialist</h4>
             </div>
         </div>
@@ -390,10 +390,14 @@
                 if ($('#carousel-button').children('span').hasClass('fa-pause')) {
                     $('#mycarousel').carousel('pause');
                     $('#carousel-button').children('span').removeClass('fa-pause')
+                    $('#carousel-button').removeClass('btn-danger')
+                    $('#carousel-button').addClass('btn-success')
                     $('#carousel-button').children('span').addClass('fa-play')
                 } else {
                     $('#mycarousel').carousel('cycle');
                     $('#carousel-button').children('span').removeClass('fa-play')
+                    $('#carousel-button').removeClass('btn-success')
+                    $('#carousel-button').addClass('btn-danger')
                     $('#carousel-button').children('span').addClass('fa-pause')
                 }
             });

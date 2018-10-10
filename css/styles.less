@@ -1,0 +1,78 @@
+@lt-gray: #ddd;
+@background-dark: #512DA8;
+@background-light: #9575CD;
+@background-pale: #D1C4E9;
+
+body{
+    padding-top: 50px;
+}
+
+// Height Variables
+@carousel-item-height: 300px;
+
+.zero-margin (@pd-top-bot: 0px, @pd-lt-rt: 0px) {
+    margin: 0px auto;
+    padding: @pd-top-bot @pd-lt-rt;
+}
+
+// landing-page 
+
+.row-header {
+    .zero-margin();
+}
+
+.row-content {
+    .zero-margin(50px, 0px);
+    border-bottom: 1px ridge;
+}
+
+.footer {
+    .zero-margin(20px, 0px);
+    background-color: @background-pale;
+}
+
+.jumbotron {
+    .zero-margin(70px, 30px);
+    background-color: @background-light;
+    color: floralwhite;
+}
+
+.address {
+    margin: 0px;
+    font-size: 80%;
+    color: #0f0f0f;
+}
+
+/* Navigation Background */
+
+.navbar-dark {
+    background-color: @background-dark;
+}
+
+/* About Us */
+
+.row-content-ext {
+    .zero-margin(30px, 0px);
+}
+
+/* Carousel */
+
+.carousel {
+    background-color: @background-dark;
+
+    .carousel-item{
+        height: @carousel-item-height;
+        img{
+            min-height: @carousel-item-height;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    } 
+}
+
+#carousel-button {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}

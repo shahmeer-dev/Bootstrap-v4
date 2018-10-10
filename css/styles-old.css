@@ -1,0 +1,76 @@
+body {
+    padding-top: 50px;
+    z-index: 0;
+}
+
+.row-header {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0 50px 0;
+    border-bottom: 1px ridge;
+}
+
+.row-content-last {
+    margin: 0px auto;
+    padding: 50px 0 50px 0;
+    /* border-bottom: 1px ridge; */
+}
+
+.footer {
+    margin: 0px auto;
+    padding: 20px 0 20px 0;
+    background-color: #D1C4E9;
+}
+
+.jumbotron {
+    margin: 0% auto;
+    padding: 70px 30px 70px 30px;
+    background: #9575CD;
+    color: floralwhite;
+}
+
+.address {
+    margin: 0px;
+    font-size: 80%;
+    color: #0f0f0f;
+}
+
+/* Navigation Background */
+
+.navbar-dark {
+    background-color: #512DA8;
+}
+
+/* About Us */
+
+.row-content-ext {
+    margin: 0px auto;
+    padding: 30px 0px 30px 0px;
+}
+
+/* Carousel */
+
+.carousel {
+    background: #512DA8;
+}
+
+.carousel-item {
+    height: 300px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
+#carousel-button {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
