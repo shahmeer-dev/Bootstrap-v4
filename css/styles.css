@@ -51,5 +51,17 @@ body {
 
 #carousel-button {
   position: absolute;
-  right: 0px;
-  bottom: 0px; }
+  right: 48.5%;
+  bottom: 15%; }
+
+#log-btn {
+  cursor: pointer; }
+
+#login-modal .modal-header, #reserve-form .modal-header {
+  background-color: #512da8;
+  color: floralwhite; }
+  #login-modal .modal-header button, #reserve-form .modal-header button {
+    color: floralwhite; }
+
+#login-modal .modal-body, #reserve-form .modal-body {
+  background-color: #d1c4e9; }

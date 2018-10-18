@@ -73,6 +73,23 @@ body {
 
 #carousel-button {
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: 48.5%;
+  bottom: 15%;
+}
+
+#log-btn {
+  cursor: pointer;
+}
+
+#login-modal, #reserve-form {
+  .modal-header{
+    background-color: $background-dark;
+    color: floralwhite;
+    button{
+      color: floralwhite;
+    }
+  }
+  .modal-body{
+    background-color: $background-pale;
+  }
 }

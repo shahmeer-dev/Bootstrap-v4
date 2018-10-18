@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -36,14 +36,14 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><span class="fa fa-address-card fa-lg"></span>
                             Contact</a></li>
                 </ul>
-                <a class="navbar-text text-white pull-right" href="" data-toggle="modal" data-target="#loginModal"><span class="fa fa-sign-in"></span>
+                <a class="navbar-text text-white pull-right" id="log-btn"><span class="fa fa-sign-in"></span>
                     Login</a>
             </div>
         </div>
     </nav>
 
     <!-- Login-form Modal -->
-    <div class="modal fade" id="loginModal">
+    <div class="modal fade" id="login-modal">
         <div class="modal-dialog modal-lg">
 
             <div class="modal-content">
@@ -82,7 +82,7 @@
         </div>
     </div>
 
-
+    <!-- Jumbotron -->
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -91,11 +91,11 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-3 align-self-center">
+                <div class="col-12 col-sm-3 align-self-center mb-3 text-center">
                     <img src="img/logo.png" alt="Logo" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a class="btn btn-warning btn-block nav-link text-white" data-toggle="modal" data-target="#reserve-form">Reserve
+                    <a class="btn btn-warning btn-block nav-link text-white" id="reserve-btn">Reserve
                         Table</a>
                 </div>
             </div>
@@ -381,29 +381,8 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-
-        $(document).ready(function () {
-            $('#mycarousel').carousel({ interval: 2000 });
-
-            $('#carousel-button').click(function () {
-                if ($('#carousel-button').children('span').hasClass('fa-pause')) {
-                    $('#mycarousel').carousel('pause');
-                    $('#carousel-button').children('span').removeClass('fa-pause')
-                    $('#carousel-button').removeClass('btn-danger')
-                    $('#carousel-button').addClass('btn-success')
-                    $('#carousel-button').children('span').addClass('fa-play')
-                } else {
-                    $('#mycarousel').carousel('cycle');
-                    $('#carousel-button').children('span').removeClass('fa-play')
-                    $('#carousel-button').removeClass('btn-success')
-                    $('#carousel-button').addClass('btn-danger')
-                    $('#carousel-button').children('span').addClass('fa-pause')
-                }
-            });
-        })
-        
-    </script>
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
 
 </body>
 
