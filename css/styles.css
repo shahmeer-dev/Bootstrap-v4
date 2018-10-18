@@ -65,3 +65,6 @@ body {
 
 #login-modal .modal-body, #reserve-form .modal-body {
   background-color: #d1c4e9; }
+
+#accordion {
+  cursor: pointer; }
